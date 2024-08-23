@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:ui_money/src/controller/user/user_controller.dart';
 import 'package:ui_money/src/ui/widget/my_text.dart';
 
 class BalanceWidget extends StatelessWidget {
-  const BalanceWidget({super.key});
-
+  BalanceWidget({super.key});
+  final UserController userController = Get.put(UserController());
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -21,12 +23,14 @@ class BalanceWidget extends StatelessWidget {
                 const SizedBox(
                   height: 12,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    text32Bold('\$ 80,000.60'),
-                    text24Bold('THB'),
-                  ],
+                Obx(
+                  () => Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      text32Bold('฿ ${userController.balance.value}'),
+                      text24Bold('THB'),
+                    ],
+                  ),
                 ),
               ],
             ),

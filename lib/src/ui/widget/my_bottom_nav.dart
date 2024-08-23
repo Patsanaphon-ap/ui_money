@@ -19,7 +19,7 @@ class _BottomNavBarState extends State<BottomNavBar>
   final BottomNavController _controller = Get.put(BottomNavController());
 
   static final List<Widget> _widgetOptions = <Widget>[
-    const HomePage(),
+    HomePage(),
     const WalletPage(),
     const Text(
       'Index 2: School',

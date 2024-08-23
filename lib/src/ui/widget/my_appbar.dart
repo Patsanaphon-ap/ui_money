@@ -65,25 +65,26 @@ class MyAppbar extends StatelessWidget {
 
 class MyAppbarDefault extends StatelessWidget {
   final String? title;
-  const MyAppbarDefault({super.key, this.title});
+  final Future<void> Function()? onPressed;
+  const MyAppbarDefault({super.key, this.title, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: true,
       leading: IconButton(
+        color: Theme.of(context).primaryColorDark,
         iconSize: 24,
         icon: const Icon(
           Icons.arrow_back_ios_new_outlined,
         ),
-        onPressed: () {
-          Get.back();
-        },
+        onPressed: onPressed ?? () => Get.back(),
       ),
       title: text24Bold(
         title ?? '',
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
+        color: Theme.of(context).primaryColorDark,
       ),
     );
   }

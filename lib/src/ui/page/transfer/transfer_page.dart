@@ -1,112 +1,46 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
+import 'package:ui_money/src/controller/transfer/transfer_controller.dart';
+import 'package:ui_money/src/ui/page/transfer/widget/amount_widget.dart';
+import 'package:ui_money/src/ui/page/transfer/widget/description_widget.dart';
+import 'package:ui_money/src/ui/page/transfer/widget/from_widget.dart';
+import 'package:ui_money/src/ui/page/transfer/widget/to_widget.dart';
 import 'package:ui_money/src/ui/widget/my_appbar.dart';
 import 'package:ui_money/src/ui/widget/my_page.dart';
 import 'package:ui_money/src/ui/widget/my_text.dart';
 
 class TransferPage extends StatelessWidget {
-  const TransferPage({super.key});
-
+  TransferPage({super.key});
+  final TransferController transferController = Get.put(TransferController());
   @override
   Widget build(BuildContext context) {
-    return MyPage(
-      bottomNavigationBar: _bottomNav(context),
-      appbar: const MyAppbarDefault(
-        title: 'Transfer',
-      ),
-      child: RefreshIndicator(
-        onRefresh: () async {},
-        child: ListView(
-          padding: const EdgeInsets.symmetric(horizontal: 12),
-          physics: const BouncingScrollPhysics(),
-          shrinkWrap: true,
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                text18Bold('From'),
-                Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                  decoration: BoxDecoration(
-                    border: Border.all(color: Theme.of(context).dividerColor),
-                    borderRadius: const BorderRadius.all(Radius.circular(8)),
+    return GestureDetector(
+      onTap: () => Get.focusScope?.unfocus(),
+      child: MyPage(
+        bottomNavigationBar: _bottomNav(context),
+        appbar: const MyAppbarDefault(
+          title: 'Transfer',
+        ),
+        child: RefreshIndicator(
+          onRefresh: () async {},
+          child: ListView(
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            physics: const BouncingScrollPhysics(),
+            shrinkWrap: true,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  FromTransferWidget(),
+                  ToTransferWidget(
+                    controller: transferController,
                   ),
-                  child: Row(
-                    children: [
-                      CircleAvatar(
-                        backgroundColor:
-                            Theme.of(context).scaffoldBackgroundColor,
-                        child: SvgPicture.asset('assets/icons/avatar.svg'),
-                      ),
-                      const SizedBox(
-                        width: 12,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          text18Normal('SAVING ACCOUNT'),
-                          text18Bold('227-0-xxx393'),
-                          Row(
-                            children: [
-                              text18Bold('80,000'),
-                              text18Normal('THB')
-                            ],
-                          ),
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-                text18Bold('To'),
-                Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                  decoration: BoxDecoration(
-                    border: Border.all(color: Theme.of(context).dividerColor),
-                    borderRadius: const BorderRadius.all(Radius.circular(8)),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      text18Normal('ACCOUNT'),
-                      const TextField(
-                        keyboardType: TextInputType.number,
-                        textInputAction: TextInputAction.next,
-                        decoration: InputDecoration(
-                          hintText: 'Account Number or Phone Number',
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(
-                  height: 12,
-                ),
-                Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                  decoration: BoxDecoration(
-                    border: Border.all(color: Theme.of(context).dividerColor),
-                    borderRadius: const BorderRadius.all(Radius.circular(8)),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      text18Normal('Amount'),
-                      const TextField(
-                        keyboardType: TextInputType.number,
-                        textInputAction: TextInputAction.next,
-                        decoration: InputDecoration(
-                          hintText: '0.00',
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ],
+                  AmountWidget(controller: transferController),
+                  DescriptionWidget(controller: transferController),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -119,12 +53,12 @@ class TransferPage extends StatelessWidget {
           right: 16,
           bottom: MediaQuery.of(context).padding.bottom + 12,
           top: 8),
-      decoration: const BoxDecoration(
-        borderRadius: BorderRadius.only(
+      decoration: BoxDecoration(
+        borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(24.0),
           topRight: Radius.circular(24.0),
         ),
-        color: Colors.black,
+        color: Theme.of(context).primaryColor,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -132,17 +66,24 @@ class TransferPage extends StatelessWidget {
         children: [
           Row(
             children: [
-              TextButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30.0),
+              Expanded(
+                child: TextButton(
+                  onPressed: () {
+                    transferController.onConfirm();
+                  },
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0),
+                    ),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 12),
+                    backgroundColor: Theme.of(context).scaffoldBackgroundColor,
                   ),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                  backgroundColor: Colors.white,
+                  child: text22Bold(
+                    'Confirm',
+                    color: Theme.of(context).primaryColorDark,
+                  ),
                 ),
-                child: text22Bold('เลือกเวลา'),
               ),
             ],
           ),

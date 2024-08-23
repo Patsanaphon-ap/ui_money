@@ -92,12 +92,14 @@ Widget text22Bold(String data,
     {int? maxLines,
     TextOverflow? overflow,
     TextDecoration? decoration,
-    TextAlign? textAlign}) {
+    TextAlign? textAlign,
+    Color? color}) {
   return _myText(
     data,
     maxLines: maxLines,
     textAlign: textAlign,
-    style: _s22Bold.copyWith(overflow: overflow, decoration: decoration),
+    style: _s22Bold.copyWith(
+        overflow: overflow, color: color, decoration: decoration),
   );
 }
 
@@ -160,12 +162,14 @@ Widget text24Bold(String data,
     {int? maxLines,
     TextOverflow? overflow,
     TextDecoration? decoration,
-    TextAlign? textAlign}) {
+    TextAlign? textAlign,
+    Color? color}) {
   return _myText(
     data,
     maxLines: maxLines,
     textAlign: textAlign,
-    style: _s24Bold.copyWith(overflow: overflow, decoration: decoration),
+    style: _s24Bold.copyWith(
+        overflow: overflow, color: color, decoration: decoration),
   );
 }
 

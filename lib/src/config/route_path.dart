@@ -6,6 +6,8 @@ class RoutePath {
   static const bottomnav = '/';
   static const home = '/home';
   static const transfer = '/transfer';
+  static const transferconfirm = '/transfer/confirm';
+  static const transfersuccess = '/transfer/success';
   static const history = '/history';
   static const profile = '/profile';
 }

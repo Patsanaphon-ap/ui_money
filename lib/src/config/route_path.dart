@@ -5,6 +5,7 @@ class RoutePath {
   static const pageNotfound = '/notfound';
   static const bottomnav = '/';
   static const home = '/home';
+  static const wallet = '/wallet';
   static const transfer = '/transfer';
   static const transferconfirm = '/transfer/confirm';
   static const transfersuccess = '/transfer/success';

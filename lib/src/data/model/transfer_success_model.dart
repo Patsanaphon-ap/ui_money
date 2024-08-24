@@ -1,4 +1,4 @@
-class TransferSuccessModle {
+class TransferSuccessModel {
   int sendid;
   String sendName;
   int receiverid;
@@ -6,16 +6,16 @@ class TransferSuccessModle {
   int sendamount;
   double currentbalance;
 
-  TransferSuccessModle({
-     this.sendid = 0,
-     this.sendName = '',
-     this.receiverid = 0,
-     this.receiverName = '',
-     this.sendamount = 0,
-     this.currentbalance = 0,
+  TransferSuccessModel({
+    this.sendid = 0,
+    this.sendName = '',
+    this.receiverid = 0,
+    this.receiverName = '',
+    this.sendamount = 0,
+    this.currentbalance = 0,
   });
 
-  factory TransferSuccessModle.fromJson(Map<String, dynamic> json) {
+  factory TransferSuccessModel.fromJson(Map<String, dynamic> json) {
     double balance = 0.0;
     if (json['current'] is String) {
       balance = double.tryParse(json['current']) ?? 0.0;
@@ -26,7 +26,7 @@ class TransferSuccessModle {
     } else {
       balance = 0.0;
     }
-    return TransferSuccessModle(
+    return TransferSuccessModel(
       sendid: json['sendid'] ?? 0,
       sendName: json['sendName'] ?? '',
       receiverid: json['receiverid'] ?? '',

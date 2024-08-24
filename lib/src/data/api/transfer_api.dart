@@ -7,7 +7,7 @@ abstract class TransferRemoteData {
   Future<Result<Map<String, String>, String>> getPreConfirm({
     required int receiverid,
   });
-  Future<Result<TransferSuccessModle, String>> getTransfer({
+  Future<Result<TransferSuccessModel, String>> getTransfer({
     required int userid,
     required int receiverid,
     required double amount,
@@ -36,7 +36,7 @@ class TrasnferRemoteDataImp extends TransferRemoteData {
   }
 
   @override
-  Future<Result<TransferSuccessModle, String>> getTransfer({
+  Future<Result<TransferSuccessModel, String>> getTransfer({
     required int userid,
     required int receiverid,
     required double amount,
@@ -55,7 +55,7 @@ class TrasnferRemoteDataImp extends TransferRemoteData {
 
     if (resp.status) {
       return Success(
-        TransferSuccessModle.fromJson(resp.data),
+        TransferSuccessModel.fromJson(resp.data),
       );
     }
     return Error(resp.message);

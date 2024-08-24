@@ -4,6 +4,7 @@ import 'package:ui_money/src/ui/page/home/home_page.dart';
 import 'package:ui_money/src/ui/page/pre_transfer/pre_transfer_page.dart';
 import 'package:ui_money/src/ui/page/pre_transfer/success/transfer_success.dart';
 import 'package:ui_money/src/ui/page/transfer/transfer_page.dart';
+import 'package:ui_money/src/ui/page/wallet/wallet_page.dart';
 import 'package:ui_money/src/ui/widget/my_bottom_nav.dart';
 
 import 'route_path.dart';
@@ -19,6 +20,10 @@ class RoutePages {
     GetPage(
       name: RoutePath.home,
       page: () => HomePage(),
+    ),
+    GetPage(
+      name: RoutePath.wallet,
+      page: () => WalletPage(),
     ),
     GetPage(
       name: RoutePath.transfer,

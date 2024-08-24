@@ -19,7 +19,7 @@ class TransferController extends GetxController {
   final TextEditingController amount = TextEditingController();
   final TextEditingController note = TextEditingController();
 
-  TransferSuccessModle completeData = TransferSuccessModle();
+  TransferSuccessModel completeData = TransferSuccessModel();
 
   void onConfirm() async {
     Get.toNamed(RoutePath.transferconfirm);
@@ -59,7 +59,7 @@ class TransferController extends GetxController {
     );
     final isSuccess = response.isSuccess();
     if (isSuccess) {
-      completeData = response.tryGetSuccess() ?? TransferSuccessModle();
+      completeData = response.tryGetSuccess() ?? TransferSuccessModel();
 
       Get.find<UserController>().balance.value =
           FormatUtil.formatDouble(completeData.currentbalance);

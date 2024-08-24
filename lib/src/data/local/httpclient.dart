@@ -57,7 +57,6 @@ class HttpClientImp implements HttpClient {
     Map<String, dynamic>? query,
     Options? options,
     CancelToken? cancelToken,
-    bool myTag = true,
   }) async {
     try {
       Response<dynamic>? response;

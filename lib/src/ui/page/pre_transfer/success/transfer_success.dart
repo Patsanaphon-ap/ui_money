@@ -30,7 +30,7 @@ class TransferSuccessPage extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Icon(
+                const Icon(
                   Icons.check_circle_outline_outlined,
                   size: 64,
                   color: Colors.green,

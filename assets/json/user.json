@@ -1,0 +1,11 @@
+{
+    "code": 200,
+    "message": "Success",
+    "data": {
+        "userid": 1,
+        "first_name": "Spiff",
+        "last_name": "James",
+        "mobilephone": "0902515000",
+        "balance": 67500
+    }
+}

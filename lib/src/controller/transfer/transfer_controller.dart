@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ui_money/mock/api/mock_transfer_api.dart';
 import 'package:ui_money/src/config/route_path.dart';
 import 'package:ui_money/src/controller/user/user_controller.dart';
-import 'package:ui_money/src/data/api/transfer_api.dart';
 import 'package:ui_money/src/data/model/transfer_success_model.dart';
 import 'package:ui_money/src/data/model/user_detail_model.dart';
 import 'package:ui_money/src/injector.dart';
@@ -12,7 +12,7 @@ import 'package:ui_money/src/util/format_util.dart';
 class TransferController extends GetxController {
   bool isloaded = false;
   Map<String, String> name = {};
-  final _transferData = si<TransferRemoteData>();
+  final _transferData = si<MockTransferRemoteData>();
   String errorMessage = '';
 
   final TextEditingController toUser = TextEditingController();

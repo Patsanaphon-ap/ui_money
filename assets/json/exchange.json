@@ -1,0 +1,486 @@
+{
+    "code": 200,
+    "message": "Success",
+    "data": [
+        {
+            "currency_id": "USD",
+            "country_name": "United States",
+            "currency_name_th": "สหรัฐอเมริกา : ดอลลาร์ (USD)",
+            "currency_name_eng": "USA : DOLLAR (USD) ",
+            "buying_sight": 34.2116,
+            "buying_transfer": 34.3068,
+            "selling": 34.6477,
+            "flag_path": "/content/dam/bot/currencyflags/USD.png"
+        },
+        {
+            "currency_id": "GBP",
+            "country_name": "United Kingdom",
+            "currency_name_th": "อังกฤษ : ปอนด์สเตอร์ลิง (GBP)",
+            "currency_name_eng": "UNITED KINGDOM : POUND STERING (GBP)",
+            "buying_sight": 44.0987,
+            "buying_transfer": 44.2401,
+            "selling": 45.101,
+            "flag_path": "/content/dam/bot/currencyflags/GBP.png"
+        },
+        {
+            "currency_id": "EUR",
+            "country_name": "Euro Zone",
+            "currency_name_th": "ยูโรโซน : ยูโร (EUR)",
+            "currency_name_eng": "EURO ZONE : EURO (EUR)",
+            "buying_sight": 37.5623,
+            "buying_transfer": 37.6679,
+            "selling": 38.413,
+            "flag_path": "/content/dam/bot/currencyflags/EUR.png"
+        },
+        {
+            "currency_id": "JPY",
+            "country_name": "Japan (per 100 yen)",
+            "currency_name_th": "ญี่ปุ่น : เยน (100 เยน) (JPY)",
+            "currency_name_eng": "JAPAN : YEN (100 YEN) (JPY) ",
+            "buying_sight": 23.044,
+            "buying_transfer": 23.1525,
+            "selling": 23.8439,
+            "flag_path": "/content/dam/bot/currencyflags/JPY.png"
+        },
+        {
+            "currency_id": "HKD",
+            "country_name": "Hong Kong",
+            "currency_name_th": "ฮ่องกง : ดอลลาร์ (HKD) ",
+            "currency_name_eng": "HONG KONG : DOLLAR (HKD)",
+            "buying_sight": 4.3639,
+            "buying_transfer": 4.3818,
+            "selling": 4.4701,
+            "flag_path": "/content/dam/bot/currencyflags/HKD.png"
+        },
+        {
+            "currency_id": "MYR",
+            "country_name": "Malaysia",
+            "currency_name_th": "มาเลเซีย : ริงกิต (MYR)",
+            "currency_name_eng": "MALAYSIA : RINGGIT (MYR)",
+            "buying_sight": 7.7244,
+            "buying_transfer": 7.7587,
+            "selling": 7.9833,
+            "flag_path": "/content/dam/bot/currencyflags/MYR.png"
+        },
+        {
+            "currency_id": "SGD",
+            "country_name": "Singapore",
+            "currency_name_th": "สิงคโปร์ : ดอลลาร์ (SGD) ",
+            "currency_name_eng": "SINGAPORE : DOLLAR (SGD)",
+            "buying_sight": 25.9231,
+            "buying_transfer": 25.9968,
+            "selling": 26.5954,
+            "flag_path": "/content/dam/bot/currencyflags/SGD.png"
+        },
+        {
+            "currency_id": "BND",
+            "country_name": "Brunei Darussalam",
+            "currency_name_th": "บรูไนดารุสซาลาม : ดอลลาร์ (BND)",
+            "currency_name_eng": "BRUNEI : DOLLAR (BND) ",
+            "buying_sight": 25.816,
+            "buying_transfer": 25.906,
+            "selling": 26.6619,
+            "flag_path": "/content/dam/bot/currencyflags/BND.png"
+        },
+        {
+            "currency_id": "PHP",
+            "country_name": "Philippines",
+            "currency_name_th": "ฟิลิปปินส์ : เปโซ (PHP) ",
+            "currency_name_eng": "PHILIPPINES : PESO (PHP) ",
+            "buying_sight": 0.5748,
+            "buying_transfer": 0.5805,
+            "selling": 0.6288,
+            "flag_path": "/content/dam/bot/currencyflags/PHP.png"
+        },
+        {
+            "currency_id": "IDR",
+            "country_name": "Indonesia (per 1000 rupiah)",
+            "currency_name_th": "อินโดนิเซีย : รูเปีย (1,000 รูเปีย) (IDR)",
+            "currency_name_eng": "INDONESIA : RUPIAH (1,000 RUPIAH) (IDR)",
+            "buying_sight": 2.0553,
+            "buying_transfer": 2.1205,
+            "selling": 2.3127,
+            "flag_path": "/content/dam/bot/currencyflags/IDR.png"
+        },
+        {
+            "currency_id": "INR",
+            "country_name": "India",
+            "currency_name_th": "อินเดีย : รูปี (INR) ",
+            "currency_name_eng": "INDIA : RUPEE (INR)",
+            "buying_sight": 0.3877,
+            "buying_transfer": 0.3914,
+            "selling": 0.4422,
+            "flag_path": "/content/dam/bot/currencyflags/INR.png"
+        },
+        {
+            "currency_id": "CHF",
+            "country_name": "Switzerland",
+            "currency_name_th": "สวิสเซอร์แลนด์ : ฟรังก์ (CHF)",
+            "currency_name_eng": "SWITZERLAND : FRANC (CHF) ",
+            "buying_sight": 39.3583,
+            "buying_transfer": 39.4723,
+            "selling": 40.2039,
+            "flag_path": "/content/dam/bot/currencyflags/CHF.png"
+        },
+        {
+            "currency_id": "AUD",
+            "country_name": "Australia",
+            "currency_name_th": "ออสเตรเลีย : ดอลลาร์ (AUD)",
+            "currency_name_eng": "AUSTRALIA : DOLLAR (AUD) ",
+            "buying_sight": 22.5558,
+            "buying_transfer": 22.6206,
+            "selling": 23.4573,
+            "flag_path": "/content/dam/bot/currencyflags/AUD.png"
+        },
+        {
+            "currency_id": "NZD",
+            "country_name": "New Zealand",
+            "currency_name_th": "นิวซีแลนด์ : ดอลลาร์ (NZD)",
+            "currency_name_eng": "NEW ZEALAND : DOLLAR (NZD)",
+            "buying_sight": 20.5535,
+            "buying_transfer": 20.6166,
+            "selling": 21.2633,
+            "flag_path": "/content/dam/bot/currencyflags/NZD.png"
+        },
+        {
+            "currency_id": "CAD",
+            "country_name": "Canada",
+            "currency_name_th": "แคนาดา : ดอลลาร์ (CAD)",
+            "currency_name_eng": "CANADA : DOLLAR (CAD)",
+            "buying_sight": 24.8516,
+            "buying_transfer": 24.9293,
+            "selling": 25.4935,
+            "flag_path": "/content/dam/bot/currencyflags/CAD.png"
+        },
+        {
+            "currency_id": "SEK",
+            "country_name": "Sweden",
+            "currency_name_th": "สวีเดน : โครนา (SEK)",
+            "currency_name_eng": "SWEDEN : KRONA (SEK)",
+            "buying_sight": 3.2532,
+            "buying_transfer": 3.2677,
+            "selling": 3.343,
+            "flag_path": "/content/dam/bot/currencyflags/SEK.png"
+        },
+        {
+            "currency_id": "DKK",
+            "country_name": "Denmark",
+            "currency_name_th": "เดนมาร์ก : โครน (DKK)",
+            "currency_name_eng": "DENMARK : KRONE (DKK) ",
+            "buying_sight": 5.032,
+            "buying_transfer": 5.0478,
+            "selling": 5.155,
+            "flag_path": "/content/dam/bot/currencyflags/DKK.png"
+        },
+        {
+            "currency_id": "NOK",
+            "country_name": "Norway",
+            "currency_name_th": "นอร์เวย์ : โครน (NOK) ",
+            "currency_name_eng": "NORWAY : KRONE (NOK)",
+            "buying_sight": 3.1765,
+            "buying_transfer": 3.1886,
+            "selling": 3.2695,
+            "flag_path": "/content/dam/bot/currencyflags/NOK.png"
+        },
+        {
+            "currency_id": "CNY",
+            "country_name": "China",
+            "currency_name_th": "จีน : หยวน เรนมินบิ (CNY)",
+            "currency_name_eng": "CHINA : YUAN RENMINBI (CNY)",
+            "buying_sight": 4.7196,
+            "buying_transfer": 4.7565,
+            "selling": 4.9007,
+            "flag_path": "/content/dam/bot/currencyflags/CNY.png"
+        },
+        {
+            "currency_id": "MXN",
+            "country_name": "Mexico",
+            "currency_name_th": "เม็กซิโก : เปโซ (MXN)",
+            "currency_name_eng": "MEXICO : PESO (MXN)",
+            "buying_sight": null,
+            "buying_transfer": 1.8402,
+            "selling": 1.8585,
+            "flag_path": "/content/dam/bot/currencyflags/MXN.png"
+        },
+        {
+            "currency_id": "ZAR",
+            "country_name": "South Africa",
+            "currency_name_th": "แอฟริกาใต้ : แรนด์ (ZAR)",
+            "currency_name_eng": "SOUTH AFRICA : RAND (ZAR)",
+            "buying_sight": null,
+            "buying_transfer": 1.9203,
+            "selling": 1.9394,
+            "flag_path": "/content/dam/bot/currencyflags/ZAR.png"
+        },
+        {
+            "currency_id": "KRW",
+            "country_name": "Republic of Korea",
+            "currency_name_th": "เกาหลีใต้ : วอน (KRW) ",
+            "currency_name_eng": "SOUTH KOREA : WON (KRW) ",
+            "buying_sight": null,
+            "buying_transfer": 0.0254,
+            "selling": 0.0257,
+            "flag_path": "/content/dam/bot/currencyflags/KRW.png"
+        },
+        {
+            "currency_id": "TWD",
+            "country_name": "Taiwan",
+            "currency_name_th": "ไต้หวัน : ดอลลาร์ (TWD) ",
+            "currency_name_eng": "TAIWAN : DOLLAR (TWD)",
+            "buying_sight": null,
+            "buying_transfer": 1.0671,
+            "selling": 1.0777,
+            "flag_path": "/content/dam/bot/currencyflags/TWD.png"
+        },
+        {
+            "currency_id": "KWD",
+            "country_name": "Kuwait",
+            "currency_name_th": "คูเวต : ดีนาร์ (KWD)",
+            "currency_name_eng": "KUWAIT : DINAR (KWD) ",
+            "buying_sight": null,
+            "buying_transfer": 112.1871,
+            "selling": 113.3018,
+            "flag_path": "/content/dam/bot/currencyflags/KWD.png"
+        },
+        {
+            "currency_id": "SAR",
+            "country_name": "Saudi Arabia",
+            "currency_name_th": "ซาอุดีอาระเบีย : ริยาล (SAR)",
+            "currency_name_eng": "SAUDI ARABIA : RIYAL (SAR)",
+            "buying_sight": null,
+            "buying_transfer": 9.1419,
+            "selling": 9.2327,
+            "flag_path": "/content/dam/bot/currencyflags/SAR.png"
+        },
+        {
+            "currency_id": "AED",
+            "country_name": "United Arab Emirates",
+            "currency_name_th": "สหรัฐอาหรับเอมิเรตส์ : ดีแรห์ม (AED) ",
+            "currency_name_eng": "UNITED ARAB EMIRATES : DIRHAM (AED)",
+            "buying_sight": null,
+            "buying_transfer": 9.3403,
+            "selling": 9.4331,
+            "flag_path": "/content/dam/bot/currencyflags/AED.png"
+        },
+        {
+            "currency_id": "MMK",
+            "country_name": "Myanmar",
+            "currency_name_th": "พม่า : จัต (MMK)",
+            "currency_name_eng": "MYANMAR : KYAT (MMK) ",
+            "buying_sight": null,
+            "buying_transfer": 0.0163,
+            "selling": 0.0165,
+            "flag_path": "/content/dam/bot/currencyflags/MMK.png"
+        },
+        {
+            "currency_id": "BDT",
+            "country_name": "Bangladesh",
+            "currency_name_th": "บังกลาเทศ : ตากา (BDT)",
+            "currency_name_eng": "BANGLADESH : TAKA (BDT)",
+            "buying_sight": null,
+            "buying_transfer": 0.292,
+            "selling": 0.2949,
+            "flag_path": "/content/dam/bot/currencyflags/BDT.png"
+        },
+        {
+            "currency_id": "CZK",
+            "country_name": "Czech Republic",
+            "currency_name_th": "สาธารณรัฐเช็ก : คราวน์ (CZK)",
+            "currency_name_eng": "CZECH REPUBLIC : KORUNA (CZK)",
+            "buying_sight": null,
+            "buying_transfer": 1.502,
+            "selling": 1.5169,
+            "flag_path": "/content/dam/bot/currencyflags/CZK.png"
+        },
+        {
+            "currency_id": "KHR",
+            "country_name": "Cambodia (100 Riel)",
+            "currency_name_th": "กัมพูชา : เรียล(KHR)",
+            "currency_name_eng": "CAMBODIA : RIEL(KHR) ",
+            "buying_sight": null,
+            "buying_transfer": 0.8372,
+            "selling": 0.8455,
+            "flag_path": "/content/dam/bot/currencyflags/KHR.png"
+        },
+        {
+            "currency_id": "KES",
+            "country_name": "Kenya",
+            "currency_name_th": "เคนยา : ชิลลิ่ง (KES)",
+            "currency_name_eng": "KENYA : SHILLING (KES) ",
+            "buying_sight": null,
+            "buying_transfer": 0.2659,
+            "selling": 0.2686,
+            "flag_path": "/content/dam/bot/currencyflags/KES.png"
+        },
+        {
+            "currency_id": "LAK",
+            "country_name": "Lao Peoples's Democratic Republic (100 Kip)",
+            "currency_name_th": "ลาว : กีบ(LAK)",
+            "currency_name_eng": "LAO PEOPLE'S DEMOCRATIC REPUBLIC : KIP(LAK)",
+            "buying_sight": null,
+            "buying_transfer": 0.155,
+            "selling": 0.1566,
+            "flag_path": "/content/dam/bot/currencyflags/LAK.png"
+        },
+        {
+            "currency_id": "RUB",
+            "country_name": "Russia Federation",
+            "currency_name_th": "รัสเซีย : รูเบิล (RUB)",
+            "currency_name_eng": "RUSSIAN FEDERATION : RUBLE (RUB) ",
+            "buying_sight": null,
+            "buying_transfer": 0.3835,
+            "selling": 0.3873,
+            "flag_path": "/content/dam/bot/currencyflags/RUB.png"
+        },
+        {
+            "currency_id": "VND",
+            "country_name": "Vietnam (100 Dong)",
+            "currency_name_th": "เวียดนาม : ดอง (VND)",
+            "currency_name_eng": "VIET NAM : DONG(VND) ",
+            "buying_sight": null,
+            "buying_transfer": 0.1369,
+            "selling": 0.1383,
+            "flag_path": "/content/dam/bot/currencyflags/VND.png"
+        },
+        {
+            "currency_id": "EGP",
+            "country_name": "Egypt",
+            "currency_name_th": "อียิปต์ : ปอนด์ อียิปต์ (EGP)",
+            "currency_name_eng": "EGYPT : EGYPTIAN POUND (EGP) ",
+            "buying_sight": null,
+            "buying_transfer": 0.7016,
+            "selling": 0.7085,
+            "flag_path": "/content/dam/bot/currencyflags/EGP.png"
+        },
+        {
+            "currency_id": "PLN",
+            "country_name": "Poland",
+            "currency_name_th": "โปแลนด์ : สล็อตตี (PLN)",
+            "currency_name_eng": "POLAND : ZLOTY (PLN) ",
+            "buying_sight": null,
+            "buying_transfer": 8.8724,
+            "selling": 8.9605,
+            "flag_path": "/content/dam/bot/currencyflags/PLN.png"
+        },
+        {
+            "currency_id": "LKR",
+            "country_name": "Sri Lanka",
+            "currency_name_th": "ศรีลังกา : รูปี ศรีลังกา (LKR)",
+            "currency_name_eng": "SRI LANKA : SRI LANKA RUPEE (LKR) ",
+            "buying_sight": null,
+            "buying_transfer": 0.1148,
+            "selling": 0.116,
+            "flag_path": "/content/dam/bot/currencyflags/LKR.png"
+        },
+        {
+            "currency_id": "IQD",
+            "country_name": "Iraq",
+            "currency_name_th": "อิรัก : ดีนาร์ อิรัก (IQD)",
+            "currency_name_eng": "IRAQ : IRAQI DINAR (IQD) ",
+            "buying_sight": null,
+            "buying_transfer": 0.0262,
+            "selling": 0.0264,
+            "flag_path": "/content/dam/bot/currencyflags/IQD.png"
+        },
+        {
+            "currency_id": "BHD",
+            "country_name": "Bahrain",
+            "currency_name_th": "บาห์เรน : ดีนาร์ บาห์เรน (BHD)",
+            "currency_name_eng": "BAHRAIN : BAHRAIN DINAR (BHD) ",
+            "buying_sight": null,
+            "buying_transfer": 91.0236,
+            "selling": 91.9281,
+            "flag_path": "/content/dam/bot/currencyflags/BHD.png"
+        },
+        {
+            "currency_id": "OMR",
+            "country_name": "Oman",
+            "currency_name_th": "โอมาน : เรียล โอมาน (OMR)",
+            "currency_name_eng": "OMAN : RIAL OMANI (OMR) ",
+            "buying_sight": null,
+            "buying_transfer": 89.1086,
+            "selling": 89.994,
+            "flag_path": "/content/dam/bot/currencyflags/OMR.png"
+        },
+        {
+            "currency_id": "JOD",
+            "country_name": "Jordan",
+            "currency_name_th": "จอร์แดน : ดอลลาร์ จอร์แดน (JOD)",
+            "currency_name_eng": "JORDAN : JORDANIAN DINAR (JOD) ",
+            "buying_sight": null,
+            "buying_transfer": 48.3876,
+            "selling": 48.8684,
+            "flag_path": "/content/dam/bot/currencyflags/JOD.png"
+        },
+        {
+            "currency_id": "QAR",
+            "country_name": "Qatar",
+            "currency_name_th": "กาตาร์ : เรียล กาตาร์ (QAR)",
+            "currency_name_eng": "QATAR : QATARI RIAL (QAR) ",
+            "buying_sight": null,
+            "buying_transfer": 9.4081,
+            "selling": 9.5016,
+            "flag_path": "/content/dam/bot/currencyflags/QAR.png"
+        },
+        {
+            "currency_id": "MVR",
+            "country_name": "Maldives",
+            "currency_name_th": "มัลดีฟส์ : รูฟียา (MVR)",
+            "currency_name_eng": "MALDIVES : RUFIYAA (MVR) ",
+            "buying_sight": null,
+            "buying_transfer": 2.2191,
+            "selling": 2.2411,
+            "flag_path": "/content/dam/bot/currencyflags/MVR.png"
+        },
+        {
+            "currency_id": "NPR",
+            "country_name": "Nepal",
+            "currency_name_th": "เนปาล : รูปี เนปาล (NPR)",
+            "currency_name_eng": "NEPAL : NEPALESE RUPEE (NPR) ",
+            "buying_sight": null,
+            "buying_transfer": 0.2554,
+            "selling": 0.258,
+            "flag_path": "/content/dam/bot/currencyflags/NPR.png"
+        },
+        {
+            "currency_id": "PGK",
+            "country_name": "Papua New Guinea",
+            "currency_name_th": "ปาปัวนิวกินี : คีนา (PGK)",
+            "currency_name_eng": "PAPUA NEW GUINEA : KINA (PGK) ",
+            "buying_sight": null,
+            "buying_transfer": 8.8306,
+            "selling": 8.9183,
+            "flag_path": "/content/dam/bot/currencyflags/PGK.png"
+        },
+        {
+            "currency_id": "ILS",
+            "country_name": "Israel",
+            "currency_name_th": "อิสราเอล : เชคเกิล อิสราเอล (ILS)",
+            "currency_name_eng": "ISRAEL : NEW ISRAELI SHEKEL (ILS) ",
+            "buying_sight": null,
+            "buying_transfer": 9.3431,
+            "selling": 9.4359,
+            "flag_path": "/content/dam/bot/currencyflags/ILS.png"
+        },
+        {
+            "currency_id": "HUF",
+            "country_name": "Hungary",
+            "currency_name_th": "ฮังการี : ฟอรินท์ (HUF)",
+            "currency_name_eng": "HUNGARY : FORINT (HUF) ",
+            "buying_sight": null,
+            "buying_transfer": 0.0959,
+            "selling": 0.0968,
+            "flag_path": "/content/dam/bot/currencyflags/HUF.png"
+        },
+        {
+            "currency_id": "PKR",
+            "country_name": "Pakistan",
+            "currency_name_th": "ปากีสถาน : รูปี (PKR) ",
+            "currency_name_eng": "PAKISTAN : RUPEE (PKR)",
+            "buying_sight": null,
+            "buying_transfer": 0.1231,
+            "selling": 0.1244,
+            "flag_path": "/content/dam/bot/currencyflags/PKR.png"
+        }
+    ]
+}

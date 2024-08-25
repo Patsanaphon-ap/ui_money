@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:ui_money/src/data/api/history_api.dart';
+import 'package:ui_money/mock/api/mock_history_api.dart';
 import 'package:ui_money/src/data/model/history_model.dart';
 import 'package:ui_money/src/injector.dart';
 
@@ -8,7 +8,7 @@ class HistoryController extends GetxController {
   String errormessage = '';
   List<HistoryModel> historydata = [];
   int page = 1;
-  final _historyData = si<HistoryRemoteData>();
+  final _historyData = si<MockHistoryRemoteData>();
 
   @override
   void onInit() {

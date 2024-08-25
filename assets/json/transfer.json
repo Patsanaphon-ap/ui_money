@@ -1,0 +1,11 @@
+{
+    "code": 200,
+    "message": "Success",
+    "data": {
+        "sendid": 1,
+        "sendName": "Spiff",
+        "receiverid": 2,
+        "receiverName": "Smith",
+        "sendamount": 100
+    }
+}

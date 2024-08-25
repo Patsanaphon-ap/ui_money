@@ -1,0 +1,86 @@
+{
+    "code": 200,
+    "message": "Success",
+    "data": [
+        {
+            "transaction_id": 22,
+            "sender_id": 1,
+            "receiver_id": 2,
+            "amount": 100,
+            "description": "",
+            "transaction_date": "2024-08-23T15:46:07.987Z"
+        },
+        {
+            "transaction_id": 21,
+            "sender_id": 1,
+            "receiver_id": 2,
+            "amount": 100,
+            "description": "wood",
+            "transaction_date": "2024-08-23T15:41:01.592Z"
+        },
+        {
+            "transaction_id": 20,
+            "sender_id": 1,
+            "receiver_id": 2,
+            "amount": 100,
+            "description": "food",
+            "transaction_date": "2024-08-23T12:10:11.028Z"
+        },
+        {
+            "transaction_id": 19,
+            "sender_id": 1,
+            "receiver_id": 2,
+            "amount": 100,
+            "description": "food",
+            "transaction_date": "2024-08-23T12:08:23.332Z"
+        },
+        {
+            "transaction_id": 18,
+            "sender_id": 1,
+            "receiver_id": 2,
+            "amount": 100,
+            "description": "GOOD WORK",
+            "transaction_date": "2024-08-23T12:06:01.055Z"
+        },
+        {
+            "transaction_id": 17,
+            "sender_id": 1,
+            "receiver_id": 2,
+            "amount": 100,
+            "description": "GOOD WORK",
+            "transaction_date": "2024-08-23T12:05:53.621Z"
+        },
+        {
+            "transaction_id": 16,
+            "sender_id": 1,
+            "receiver_id": 2,
+            "amount": 100,
+            "description": "GOOD WORK",
+            "transaction_date": "2024-08-23T11:58:37.831Z"
+        },
+        {
+            "transaction_id": 15,
+            "sender_id": 1,
+            "receiver_id": 2,
+            "amount": 100,
+            "description": "GOOD WORK",
+            "transaction_date": "2024-08-23T11:58:10.259Z"
+        },
+        {
+            "transaction_id": 14,
+            "sender_id": 1,
+            "receiver_id": 2,
+            "amount": 100,
+            "description": "GOOD WORK",
+            "transaction_date": "2024-08-23T11:56:14.395Z"
+        },
+        {
+            "transaction_id": 13,
+            "sender_id": 1,
+            "receiver_id": 2,
+            "amount": 100,
+            "description": "GOOD WORK",
+            "transaction_date": "2024-08-23T11:56:06.758Z"
+        }
+    ]
+}

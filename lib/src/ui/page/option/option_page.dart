@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ui_money/src/controller/theme/theme_controller.dart';
 import 'package:ui_money/src/ui/widget/my_page.dart';
+import 'package:ui_money/src/ui/widget/my_text.dart';
 
 class OptionPage extends StatelessWidget {
   OptionPage({super.key});
@@ -22,6 +23,7 @@ class OptionPage extends StatelessWidget {
           ),
           Column(
             children: [
+              text32Normal('SETTING'),
               Obx(
                 () => Switch(
                   value: _controller.currentTheme.value == ThemeMode.dark,
@@ -32,7 +34,7 @@ class OptionPage extends StatelessWidget {
                 ),
               )
             ],
-          )
+          ),
         ],
       ),
     );

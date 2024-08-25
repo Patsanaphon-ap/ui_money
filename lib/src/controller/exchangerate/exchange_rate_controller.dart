@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ui_money/src/data/api/exchange_api.dart';
+import 'package:ui_money/mock/api/mock_exchange_api.dart';
 import 'package:ui_money/src/data/model/country_rate_model.dart';
 import 'package:ui_money/src/injector.dart';
 import 'package:ui_money/src/util/format_util.dart';
 
 class ExchangeRateController extends GetxController {
   bool isloaded = false;
-  final _exchangeData = si<ExchangeRemoteData>();
+  final _exchangeData = si<MockExchangeRemoteData>();
   List<CountryRateModel> countryRateData = [];
   Rx<CountryRateModel> countrySelect1 = CountryRateModel().obs;
   Rx<TextEditingController> amountController =

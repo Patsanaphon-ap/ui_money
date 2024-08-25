@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:ui_money/src/ui/widget/my_button.dart';
 import 'package:ui_money/src/ui/widget/my_text.dart';
 
-class DiscountWidget extends StatelessWidget {
+class DiscountMiddleWidget extends StatelessWidget {
   final String path;
-  const DiscountWidget({super.key, required this.path});
+  const DiscountMiddleWidget({super.key, required this.path});
 
   @override
   Widget build(BuildContext context) {
@@ -30,18 +30,18 @@ class DiscountWidget extends StatelessWidget {
               borderRadius: const BorderRadius.all(Radius.circular(8)),
             ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    text32BoldWhite(
-                      'Discounts',
+                    text22BoldWhite(
+                      'Let Exchange and GO!',
                     ),
                     const SizedBox(
                       height: 12,
                     ),
                     const MyButton(
-                      title: 'See More',
+                      title: 'Transfer here',
                     ),
                   ],
                 ),

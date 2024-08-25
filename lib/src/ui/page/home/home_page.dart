@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ui_money/src/controller/user/user_controller.dart';
+import 'package:ui_money/src/ui/page/home/widget/discount_middle_widget.dart';
+import 'package:ui_money/src/ui/page/home/widget/discount_right_widget.dart';
+import 'package:ui_money/src/ui/page/home/widget/discount_widget.dart';
 import 'package:ui_money/src/ui/page/home/widget/my_balance.dart';
 import 'package:ui_money/src/ui/page/home/widget/transfer_widget.dart';
 import 'package:ui_money/src/ui/widget/my_appbar.dart';
@@ -41,7 +44,13 @@ class HomePage extends StatelessWidget {
                     ),
                     BalanceWidget(),
                     const TransferWidget(),
-
+                    const DiscountWidget(
+                      path: "assets/images/bg_bird.jpg",
+                    ),
+                    const DiscountMiddleWidget(path: 'assets/images/bg.png'),
+                    const DiscountRightWidget(
+                      path: "assets/images/flower.jpg",
+                    ),
                     // LocationWidget(),
                     // const MenuWidget(),
                     // DiscountWidget(),

@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:ui_money/src/data/api/exchange_api.dart';
+import 'package:ui_money/src/data/api/history_api.dart';
 import 'package:ui_money/src/data/api/transfer_api.dart';
 import 'package:ui_money/src/data/api/user_api.dart';
 import 'package:ui_money/src/data/local/httpclient.dart';
@@ -27,6 +28,9 @@ Future<void> initInstance() async {
 
   si.registerLazySingleton<ExchangeRemoteData>(
       () => ExchangeRemoteDataImp(client: si()));
+
+  si.registerLazySingleton<HistoryRemoteData>(
+      () => HistoryRemoteDataImp(client: si()));
 
   si.registerLazySingleton(() => dio);
 }

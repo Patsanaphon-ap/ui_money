@@ -54,12 +54,52 @@ class WalletPage extends StatelessWidget {
                         ExchangeAmountWidget(),
                         const Divider(),
                         ConvertAmountWidget(),
-                        Row(
-                          children: [
-                            text18Normal(exchangeController
-                                .countrySelect1.value.currencyNameTh)
-                          ],
-                        )
+                        Obx(
+                          () => Padding(
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 12.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                text16Normal(
+                                  exchangeController
+                                      .countrySelect1.value.currencyNameEng,
+                                ),
+                                Row(
+                                  children: [
+                                    text16Normal(
+                                      exchangeController
+                                          .countrySelect1.value.countryName
+                                          .toString(),
+                                    ),
+                                    text16Normal(' = '),
+                                    text16Normal(
+                                      exchangeController
+                                          .countrySelect1.value.selling
+                                          .toString(),
+                                    ),
+                                    const SizedBox(
+                                      width: 12,
+                                    ),
+                                    text16Normal('THB'),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                    child: Row(
+                      children: [
+                        text16Normal("Last Update: "),
+                        text16Bold(
+                          exchangeController.countrySelect1.value.period
+                              .toString(),
+                        ),
                       ],
                     ),
                   ),

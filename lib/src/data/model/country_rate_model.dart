@@ -1,6 +1,7 @@
 import 'package:ui_money/src/config/constants/app_const.dart';
 
 class CountryRateModel {
+  String period;
   String currencyId;
   String countryName;
   String currencyNameTh;
@@ -11,6 +12,7 @@ class CountryRateModel {
   String flagPath;
 
   CountryRateModel({
+    this.period = '',
     this.currencyId = '',
     this.countryName = '',
     this.currencyNameTh = '',
@@ -23,6 +25,7 @@ class CountryRateModel {
 
   factory CountryRateModel.fromJson(Map<String, dynamic> json) {
     return CountryRateModel(
+      period: json['period'] ?? '',
       currencyId: json['currency_id'] ?? '',
       countryName: json['country_name'] ?? '',
       currencyNameTh: json['currency_name_th'] ?? '',

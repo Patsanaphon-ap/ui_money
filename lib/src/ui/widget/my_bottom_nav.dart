@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ui_money/src/controller/bottomnav/bottom_nav_controller.dart';
+import 'package:ui_money/src/ui/page/history/history_page.dart';
 import 'package:ui_money/src/ui/page/home/home_page.dart';
 import 'package:ui_money/src/ui/page/option/option_page.dart';
 import 'package:ui_money/src/ui/page/wallet/wallet_page.dart';
@@ -21,9 +22,7 @@ class _BottomNavBarState extends State<BottomNavBar>
   static final List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     WalletPage(),
-    const Text(
-      'Index 2: School',
-    ),
+    HistoryPage(),
     OptionPage(),
   ];
 

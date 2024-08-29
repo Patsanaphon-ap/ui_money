@@ -8,6 +8,7 @@ project create for sample transfer money and show daily convert exchange rate
 - [Running the Project](#running-the-project)
 - [Features](#features)
 - [Project Structure](#project-structure)
+- [Image Screen](#Image-Screen)
 
 ## Installation
 
@@ -30,17 +31,17 @@ flutter pub get
 flutter run
 ```
 
-## Feature
+## Features
 - Sample transfer money user to user.
 - Sample history trasnfer
 - Sample convint exchange rate
 
 ## Project Structure
-
+```
 ui_money/
-│-- ios/                           # IOS file for flutter
-│-- android/                       # Android file for flutter
-│-- lib/                  
+│── ios/                           # IOS file for flutter
+│── android/                       # Android file for flutter
+│── lib/                  
 │   ├── main.dart                  # Entry point of the Flutter application
 │   ├── mock/                      # Mock data or api
 │   └── src/               
@@ -52,12 +53,17 @@ ui_money/
 │         ├── app.dart             # Flutter application material
 │         ├── environment.dart     # file environment for `flavor`
 │         └── injector.dart        # API injector
-│-- assets/                        # Images, fonts, and other assets
-│-- pubspec.yaml                   # Project dependencies and configuration
-└-- README.md                      # Project documentation
+│── assets/                        # Images, fonts, and other assets
+│── pubspec.yaml                   # Project dependencies and configuration
+└── README.md                      # Project documentation
+```
+## Image Screen
 
-
-
+<div class="row">
+   <img src="assets/screenshot/home.png" alt="App Screenshot" width="100"/>
+   <img src="assets/screenshot/convint.png" alt="App Screenshot" width="100"/>
+   <img src="assets/screenshot/history.png" alt="App Screenshot" width="100"/>
+</div>
 
 
 
